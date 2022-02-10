@@ -1,0 +1,98 @@
+/*CSS Variables*/
+
+:root{
+    --PRIMARY-COLOR:#4B4453;
+    --GRAY-COLOR: #ece6e6;
+    --WHITE-COLOR: #FFF;
+    --BLACK-COLOR:#000;
+    --SECONDARY-COLOR:#dbd9dc;
+    --ACCENT-COLOR : #4c5344;
+}
+
+/*Utility class*/
+.flex-row-center{
+    display: flex;
+    justify-content: center;
+}
+
+
+/*Navabar section*/
+.form-search{
+    outline: none;
+    max-width: 50rem;
+    padding-left: 2rem; 
+    border: 1px var(--PRIMARY-COLOR);
+    background-color: var(--SECONDARY-COLOR);
+}
+
+.form-search:focus{
+   background-color: var(--WHITE-COLOR);
+}
+
+.navbar-link{
+    width: 2.8rem;
+    height: 2.8rem;
+}
+
+.navbar-link:hover{
+    transform: scale(1.1);
+}
+
+.navbar-menu{
+    justify-content: space-evenly;
+}
+
+/*Hero Section*/
+.hero{
+    width: 100%;
+    position: relative;
+    background: linear-gradient(180deg, rgba(75,68,83,1) 47%, #4c5344 100%);   
+    
+}
+
+.hero-img{
+    height:calc(100vh - 8rem);
+    opacity: .9;
+}
+
+.hero-img-overlay{
+    position:absolute;
+    align-items: flex-end;
+    right: 0;
+    top:20%;
+    padding: 4rem;
+}
+
+.hero-heading{
+    font-size: 5rem;
+    color: var(--WHITE-COLOR);
+}
+
+.hero-cta{
+    margin-top: 4.5rem;
+    width: 18rem;
+    padding: 1.2rem 1rem;
+    font-size: 2.2rem;
+}
+
+.feature-container{
+    background-color: var(--SECONDARY-COLOR);
+    margin-bottom: 7rem;
+    padding: 2rem;
+}
+
+.category-container{
+    margin-bottom: 7rem;
+}
+
+.trending-container{
+    margin-bottom: 7rem;
+}
+
+/*footer*/
+.footer{
+    height: 14rem;
+    background-color:var(--PRIMARY-COLOR);
+    color:var(--WHITE-COLOR);
+}
+
