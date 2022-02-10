@@ -4,9 +4,243 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Shuttle Shopy | Home</title>
+    <link rel="stylesheet" href="https://shuttleui.netlify.app/components/components-styles/shuttleUI-main.css">
+    <script src="https://kit.fontawesome.com/2352d5969b.js" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <nav class="navbar flex-row">
+        <a class="navbar-brand" href="#">
+            <img class="responsive-img navbar-logo" 
+            src="./assets/site-logo.png" alt="logo">
+        </a>
+        <form class="navbar-form form-label-inline">
+            <input class="form-search navbar-form" 
+            type="search" placeholder="Search" aria-label="Search">
+        </form>
+
+        <ul class="navbar-menu list-unstyled flex-row">
+            <li class="list-inline">
+                <a class="flex-column menu-link" href="#">
+                    <!-- login -->
+                    <img class="navbar-link" src="./assets/user.png" alt="">
+                </a>
+            </li>
+            <li class="list-inline">
+                <a class="flex-column menu-link" href="#">
+                    <!-- wishlist  -->
+                <img class="navbar-link" src="./assets/heart.png" alt="">
+
+                </a>
+            </li>
+                
+            <li class="list-inline">
+                <a class="flex-column menu-link" href="#">
+                    <!-- cart -->
+                    <img class="navbar-link" src="./assets/shopping-bag.png" alt="">
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <img class="responsive-img hero-img" src="./assets/banner.png" alt="" >
+       
+        <div class="overlay">
+            <h2 class="hero-heading">Your ultimate stop</h2>
+            <h2 class="hero-heading">to buy all badminton accessories.</h2>
+            <button class="btn btn-primary hero-cta text-bold-500">Shop Now</button>
+        </div>
+    </div>
+    
+    <main>
+        
+        <h2 class="text-center">Featured Categories</h2>
+        <section class="flex-row category-container">
+            
+            <div class="card align-items-center">
+                <div class="card-header">
+                    <img class="card-img" src="./assets/rackets.jpg" alt="">
+                </div>
+                <div class="card-body card-overlay-text btn btn-primary">
+                    Rackets
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary">Shop Now</button>
+                </div>
+            </div>
+    
+            <div class="card align-items-center">
+                <div class="card-header">
+                    <img class="card-img" src="./assets/shuttles.jpg" alt="">
+                </div>
+                <div class="card-body card-overlay-text btn btn-primary">
+                    Shuttles
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary">Shop Now</button>
+                </div>
+            </div>
+
+            <div class="card align-items-center">
+                <div class="card-header">
+                    <img class="card-img" src="./assets/badminton-bag.jpg" alt="">
+                </div>
+                <div class="card-body card-overlay-text btn btn-primary">
+                    Badminton Bags
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary">Shop Now</button>
+                </div>
+            </div>
+
+            <div class="card align-items-center">
+                <div class="card-header">
+                    <img class="card-img" src="./assets/Badminton-shoes.jpg" alt="">
+                </div>
+                <div class="card-body card-overlay-text btn btn-primary">
+                    Badminton Shoes
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary">Shop Now</button>
+                </div>
+            </div>
+        </section>
+
+        <h2 class="text-center">Why choose Shuttle Shopy</h2>
+        <section class="flex-row feature-container">
+            <div class="card align-items-center">
+                    <h3>Easy Returns</h3>
+                    <p class="text-center text-sm md-btm-1"> No Questions Asked</p>
+               
+                    <div class="card-footer align-items-center">
+                        <i class="fas fa-recycle fa-3x"></i>
+                    </div>
+            </div>
+
+            <div class="card align-items-center">
+                <h3>Easy Payments</h3>
+                <p class="text-center text-sm md-btm-1">
+                    We accept many major credit cards
+                </p>
+                <div class="card-footer align-items-center">
+                    <i class="fas fa-credit-card fa-3x"></i>
+                </div>
+            </div>
+
+            <div class="card align-items-center">
+                <h3>24/5 Guarantee</h3>
+                <p class="text-center text-sm md-btm-1">  
+                    All orders are packed and shipped within 24 hours when stock allows
+                </p>
+                <div class="card-footer align-items-center">
+                    <i class="fas fa-handshake fa-3x"></i>
+                </div>
+            </div>
+
+            <h2></h2>
+            <div class="card align-items-center">
+                <h3>Free Shipping</h3>
+                <p class="text-center text-sm md-btm-1">
+                    Above Rs. 400 (to selected countries* only)
+                </p>
+  
+                <div class="card-footer align-items-center">
+                    <i class="fas fa-truck fa-3x"></i>
+                </div>
+            </div>
+        </section>
+
+
+        <h2 class="text-center">Popular Purchase</h2>
+
+        <section class="trending-section flex-row">
+            <div class="card align-items-center">
+                <div class="card-header">
+                    <img class="card-img" src="./assets/badminton-net.jpg" alt="">
+                    <span class="card-badge badge">Trending</span>
+                </div>
+                <div class="card-body">
+                    <h3>Yonex Feather Shuttle</h3>
+                    <p class="card-description">Lorem ipsum dolor sit amet consectetur</p>
+                    <p class="md-ht-1">Rs.490 <span class="card-discount"> 
+                    <span class="original-price md-ht-1"> Rs.1299 </span> (62% OFF)</span> </p>
+                </div>
+                <div class="card-footer">
+                    <button class="card-btn btn btn-primary"><i class="fas fa-cart-plus"></i>
+                    <span class="md-ht-1">ADD TO CART</span></button>
+                </div>
+            </div>
+
+            <div class="card align-items-center">
+                <div class="card-header">
+                    <img class="card-img" src="./assets/yonex-badminton.jpg" alt="">
+                    <span class="card-badge badge">Trending</span>
+                </div>
+                <div class="card-body">
+                    <h3>Yonex Feather Shuttle</h3>
+                    <p class="card-description">Lorem ipsum dolor sit amet consectetur</p>
+                    <p class="md-ht-1">Rs.1899 <span class="card-discount"> 
+                    <span class="original-price md-ht-1"> Rs.2790 </span> (32% OFF)</span> </p>
+                </div>
+                <div class="card-footer">
+                    <button class="card-btn btn btn-primary"><i class="fas fa-cart-plus"></i>
+                    <span class="md-ht-1">ADD TO CART</span></button>
+                </div>
+            </div>
+
+            <div class="card align-items-center">
+                <div class="card-header">
+                    <img class="card-img" src="./assets/yonex-badminton.jpg" alt="">
+                    <span class="card-badge badge">Trending</span>
+                </div>
+                <div class="card-body">
+                    <h3>Yonex Feather Shuttle</h3>
+                    <p class="card-description">Lorem ipsum dolor sit amet consectetur</p>
+                    <p class="md-ht-1">Rs.1899 <span class="card-discount"> 
+                    <span class="original-price md-ht-1"> Rs.2790 </span> (32% OFF)</span> </p>
+                </div>
+                <div class="card-footer">
+                    <button class="card-btn btn btn-primary"><i class="fas fa-cart-plus"></i>
+                    <span class="md-ht-1">ADD TO CART</span></button>
+                </div>
+            </div>
+
+            <div class="card align-items-center">
+                <div class="card-header">
+                    <img class="card-img" src="./assets/badminton-net.jpg" alt="">
+                    <span class="card-badge badge">Trending</span>
+                </div>
+                <div class="card-body">
+                    <h3>Yonex Feather Shuttle</h3>
+                    <p class="card-description">Lorem ipsum dolor sit amet consectetur</p>
+                    <p class="md-ht-1">Rs.490 <span class="card-discount"> 
+                    <span class="original-price md-ht-1"> Rs.1299 </span> (62% OFF)</span> </p>
+                </div>
+                <div class="card-footer">
+                    <button class="card-btn btn btn-primary"><i class="fas fa-cart-plus"></i>
+                    <span class="md-ht-1">ADD TO CART</span></button>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    
+    <footer class="footer flex-column align-items-center">
+        <ul class="list-unstyled">
+            <li class="list-inline">CONTACT US</li>
+            <li class="list-inline">SHIPPING</li>
+            <li class="list-inline">RETURNS</li>
+            <li class="list-inline">CAREERS</li>
+            <li class="list-inline">PRIVACY</li>
+            <li class="list-inline">TERMS</li>
+        </ul>
+
+        <p class="text-xs">&#169; 2021 - 2022 Shuttle Shopy | All rights reserved</p>
+
+    </footer>
     
 </body>
 </html>
