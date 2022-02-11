@@ -1,0 +1,49 @@
+/*CSS for page layout*/
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    /* grid-template-areas: 
+            "navbar navbar navbar navbar"
+            "products-filter main main main"
+            "footer footer footer footer"; */
+}
+/* 
+body{
+    background-color: var(--GRAY-COLOR);
+} */
+/*Login Page*/
+
+.main{
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.form-heading{
+    margin-left:0;
+}
+
+.form-input{
+    border-radius: 5px;
+    border: 1px solid var(--PRIMARY-COLOR);
+}
+
+.form-container{
+    min-width: 40rem;
+    border-radius: 10px;
+    background-color: var(--GRAY-COLOR);
+    padding: 4rem;
+}
+
+.forgot-password{
+    color: var(--PRIMARY-COLOR);
+    margin-left: auto;
+}
+
+.signup-text{
+    margin-top:1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--PRIMARY-COLOR);
+}

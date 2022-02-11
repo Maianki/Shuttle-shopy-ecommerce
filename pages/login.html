@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shuttle Shopy | Authentication</title>
+    <link rel="stylesheet" href="https://shuttleui.netlify.app/components/components-styles/shuttleUI-main.css">
+    <script src="https://kit.fontawesome.com/2352d5969b.js" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../styles/authentication-page.css">
+</head>
+<body>
+    
+    <div class="container">
+        <nav class="navbar flex-row">
+
+            <a class="navbar-brand" href="../index.html">
+                <img class="responsive-img navbar-logo" 
+                src="../assets/site-logo.png" alt="logo">
+            </a>
+    
+            <form class="navbar-form form-label-inline">
+                <input class="form-search navbar-form" 
+                type="search" placeholder="Search" aria-label="Search">
+            </form>
+    
+            <ul class="navbar-menu list-unstyled flex-row">
+                <li class="list-inline">
+                    <a class="flex-row menu-link btn btn-outline-secondary btn-shop-now" href="product-listing-page.html">
+                        <!-- Shop Now -->
+                        Shop now
+                    </a>
+                </li>   
+                <li class="list-inline">
+                    <a class="flex-column menu-link" href="login.html">
+                        <!-- login-->
+                        <img class="navbar-link" src="../assets/user.png" alt="login icon">
+                    </a>
+                </li>
+    
+                <li class="list-inline">
+                    <a class="flex-column menu-link" href="wishlist.html">
+                        <!-- wishlist  -->
+                    <img class="navbar-link" src="../assets/heart.png" alt="wishlist icon">
+    
+                    </a>
+                </li>
+                    
+                <li class="list-inline">
+                    <a class="flex-column menu-link" href="shopping-cart.html">
+                        <!-- cart -->
+                        <img class="navbar-link" src="../assets/shopping-bag.png" alt="add to cart icon">
+                    </a>
+                </li>    
+            </ul>
+    
+        </nav>
+
+        <main class="main flex-column">
+
+            <div class="form-container card">
+                <h2 class="form-heading">Login</h2>
+                <form>
+    
+                    <div class="form-set">
+                        <label class="form-label" for="email">Email:</label>
+                        <input class="form-input form-input-lg pd-1" type="email" id="email" name="email" required>
+                    </div>
+    
+                    <div class="form-set">
+                        <label class="form-label" for="password">Password:</label>
+                        <input class="form-input form-input-lg pd-1" type="password" id="password" name="password" required>
+                    </div>
+                    
+                    <div class="form-check md-vt-1 flex-row">
+                        <input type="checkbox" value="demo" id="examplecheck">
+                        <label class="form-label-inline text-sm text-primary" for="examplecheck"> Remember Me</label>  
+                        <a class="text-sm text-bold-500 forgot-password" href="#">Forgot Your password</a> 
+                    </div>
+                    
+                    <div class="flex-column ">
+                        <input type="submit" class="btn btn-primary form-btn text-center" value="Sign In" role="button">
+                        <button class="btn btn-secondary form-btn text-center">Guest login</button>
+                        <p class="text-sm text-center text-bold-500 text-primary signup-text">New to shuttle shopy ?</p>
+                        <a class="btn btn-secondary text-center" href="./signup.html" role="button">Create Your Account</a>
+                    </div>
+                </form>
+            </div>
+           
+        </main>
+    
+        <footer class="footer flex-column align-items-center">
+            <ul class="list-unstyled">
+                <li class="list-inline">CONTACT US</li>
+                <li class="list-inline">SHIPPING</li>
+                <li class="list-inline">RETURNS</li>
+                <li class="list-inline">CAREERS</li>
+                <li class="list-inline">PRIVACY</li>
+                <li class="list-inline">TERMS</li>
+            </ul>
+    
+            <p class="text-xs">&#169; 2021 - 2022 Shuttle Shopy | All rights reserved</p>
+    
+        </footer>
+    </div>
+   
+</body>
+</html>
