@@ -49,8 +49,11 @@
 .hero{
     width: 100%;
     position: relative;
-    background: linear-gradient(180deg, rgba(75,68,83,1) 47%, #4c5344 100%);   
-    
+    -webkit-background: linear-gradient(180deg, var(--PRIMARY-COLOR) 47%, var(--ACCENT-COLOR) 100%);
+    -moz-background: linear-gradient(180deg, var(--PRIMARY-COLOR) 47%, var(--ACCENT-COLOR) 100%);
+    -ms-background:linear-gradient(180deg, var(--PRIMARY-COLOR) 47%, var(--ACCENT-COLOR) 100%);
+    -o-background: linear-gradient(180deg, var(--PRIMARY-COLOR) 47%, var(--ACCENT-COLOR) 100%);
+    background: linear-gradient(180deg, var(--PRIMARY-COLOR) 47%, var(--ACCENT-COLOR) 100%);  
 }
 
 .hero-img{
