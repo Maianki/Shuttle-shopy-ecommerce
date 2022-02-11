@@ -35,11 +35,14 @@
 }
 
 .navbar-link:hover{
+    color: var(--WHITE-COLOR);
     transform: scale(1.1);
 }
 
 .navbar-menu{
     justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
 }
 
 /*Hero Section*/
@@ -73,6 +76,26 @@
     width: 18rem;
     padding: 1.2rem 1rem;
     font-size: 2.2rem;
+}
+
+.btn-shop-now{
+    font-size: 1.6rem;
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: var(--PRIMARY-COLOR);
+}
+
+.btn-shop-now:hover{ 
+    transform: scale(1.1);
+}
+
+ a.menu-link:hover{
+    color: var(--WHITE-COLOR);
+}
+
+.card{
+    min-width: 30rem;
 }
 
 .feature-container{

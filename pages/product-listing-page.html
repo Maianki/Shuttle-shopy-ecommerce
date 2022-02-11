@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shuttle Shopy | Product Listing Page</title>
+    <link rel="stylesheet" href="https://shuttleui.netlify.app/components/components-styles/shuttleUI-main.css">
+    <script src="https://kit.fontawesome.com/2352d5969b.js" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../styles/product-page.css">
+</head>
+<body>
+    <div class="container">
+    <nav class="navbar flex-row">
+
+        <a class="navbar-brand" href="../index.html">
+            <img class="responsive-img navbar-logo" 
+            src="../assets/site-logo.png" alt="logo">
+        </a>
+
+        <form class="navbar-form form-label-inline">
+            <input class="form-search navbar-form" 
+            type="search" placeholder="Search" aria-label="Search">
+        </form>
+
+        <ul class="navbar-menu list-unstyled flex-row">
+            <li class="list-inline">
+                <a class="flex-row menu-link btn btn-outline-secondary btn-shop-now" href="product-listing-page.html">
+                    <!-- Shop Now -->
+                    Shop now
+                </a>
+            </li>   
+            <li class="list-inline">
+                <a class="flex-column menu-link" href="login.html">
+                    <!-- login -->
+                    <img class="navbar-link" src="../assets/user.png" alt="login icon">
+                </a>
+            </li>
+
+            <li class="list-inline">
+                <a class="flex-column menu-link" href="wishlist.html">
+                    <!-- wishlist  -->
+                <img class="navbar-link" src="../assets/heart.png" alt="wishlist icon">
+
+                </a>
+            </li>
+                
+            <li class="list-inline">
+                <a class="flex-column menu-link" href="shopping-cart.html">
+                    <!-- cart -->
+                    <img class="navbar-link" src="../assets/shopping-bag.png" alt="add to cart icon">
+                </a>
+            </li>    
+        </ul>
+
+    </nav>
+    
+    <aside class="flex-column products-filter card"> 
+
+        <ul class="list-unstyled">
+            <li class="flex-row products-filter-header">
+                <h2>Filters </h2>
+                <p>clear all</p>
+            </li>
+                
+            <li class="flex-column products-filter-type">
+                <h3 class="filter-heading">Sort By</h3>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="price-filter" id="price-low-to-high" value="low-to-high" checked>
+                    <label class="form-label-inline" for="price-low-to-high">Price - Low to High</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="price-filter" id="price-high-to-low" value="high-to-low" checked>
+                    <label class="form-label-inline" for="price-high-to-low">Price - High to Low</label>
+                </div>
+            </li>
+
+            <li class="flex-column products-filter-type">
+                <h3 class="filter-heading">Categories</h3>
+                <div class="form-check">
+                    <input type="checkbox" value="racket" id="rackets">
+                    <label class="form-label-inline" for="rackets"> Rackets</label>   
+                </div>
+
+                <div class="form-check">
+                    <input type="checkbox" value="shuttle" id="shuttles">
+                    <label class="form-label-inline" for="shuttles"> Shuttles</label>   
+                </div>
+
+                <div class="form-check">
+                    <input type="checkbox" value="bag" id="badminton-bags">
+                    <label class="form-label-inline" for="badminton-bags"> Badminton Bags</label>   
+                </div>
+
+                <div class="form-check">
+                    <input type="checkbox" value="shoes" id="badminton-shoes">
+                    <label class="form-label-inline" for="badminton-shoes"> Badminton Shoes</label>   
+                </div>
+
+            </li>
+
+            <li class="flex-column products-filter-type">
+                <h3 class="filter-heading">Rating</h3>
+                <input class="price-slider" type="range" min="1" max="5" value="5" step="1">
+                <div class="flex-row rating-slider-range">
+                    <p class="text-sm"><i class="far fa-star"></i> 1</p>
+                    <p class="text-sm"><i class="far fa-star"></i> 5</p>
+                </div>
+            </li>
+
+            <li class="flex-column">
+                <h3 class="filter-heading">Availability</h3>
+                <div class="form-check">
+                    <input type="checkbox" value="out-of-stock" id="out-of-stock">
+                    <label class="form-label-inline" for="out-of-stock"> Include out of stock</label>   
+                </div>
+
+                <div class="form-check">
+                    <input type="checkbox" value="cash on delivery" id="cod">
+                    <label class="form-label-inline" for="cod"> Cash on delivery</label>   
+                </div>
+
+                <div class="form-check">
+                    <input type="checkbox" value="all-items" id="all-items">
+                    <label class="form-label-inline" for="all-items"> All items</label>   
+                </div>
+            </li>
+        </ul>
+       
+    </aside>
+
+    <main class="main flex-row">
+            
+        <div class="card align-items-center">
+            <div class="card-header">
+                <img class="card-img" src="../assets/shuttles.jpg" alt="">
+                <span class="card-badge badge">Trending</span>
+            </div>
+            <div class="card-body">
+                <h3>Yonex Feather Shuttle <span class= "btn btn-secondary product-rating text-xs">4 <i class="fas fa-star"> </i></span></h3>  
+                <p class="card-description">Lorem ipsum dolor sit amet</p>
+                <p class="md-ht-1 md-btm-1">Rs.490 <span class="card-discount"> 
+                <span class="original-price md-ht-1"> Rs.1299 </span> (62% OFF)</i></span> </p>
+            </div>
+            <div class="card-footer">
+                <button class="card-btn btn btn-primary"><i class="fas fa-cart-plus"></i>
+                <span class="md-ht-1">ADD TO CART</span></button>
+                <button class="card-btn btn btn-secondary"><i class="fas fa-heart"></i>
+                    <span class="md-ht-1">SAVE TO WISHLIST</span></button>
+                  
+            </div>
+        </div>
+
+        <div class="card align-items-center">
+            <div class="card-header">
+                <img class="card-img" src="../assets/shuttles.jpg" alt="">
+                <span class="card-badge badge">Trending</span>
+            </div>
+            <div class="card-body">
+                <h3>Yonex Feather Shuttle <span class= "btn btn-secondary product-rating text-xs">4 <i class="fas fa-star"> </i></span></h3>
+                <p class="card-description">Lorem ipsum dolor sit amet</p>
+                <p class="md-ht-1 md-btm-1">Rs.490 <span class="card-discount"> 
+                <span class="original-price md-ht-1"> Rs.1299 </span> (62% OFF)</span> </p>
+            </div>
+            <div class="card-footer">
+                <button class="card-btn btn btn-primary"><i class="fas fa-cart-plus"></i>
+                <span class="md-ht-1">ADD TO CART</span></button>
+                <button class="card-btn btn btn-secondary"><i class="fas fa-heart"></i>
+                    <span class="md-ht-1">SAVE TO WISHLIST</span></button>
+                  
+            </div>
+        </div>
+
+        <div class="card align-items-center">
+            <div class="card-header">
+                <img class="card-img" src="../assets/shuttles.jpg" alt="">
+                <span class="card-badge badge">Trending</span>
+            </div>
+            <div class="card-body">
+                <h3>Yonex Feather Shuttle <span class= "btn btn-secondary product-rating text-xs">4 <i class="fas fa-star"> </i></span></h3>
+                <p class="card-description">Lorem ipsum dolor sit amet</p>
+                <p class="md-ht-1 md-btm-1">Rs.490 <span class="card-discount"> 
+                <span class="original-price md-ht-1"> Rs.1299 </span> (62% OFF)</span> </p>
+            </div>
+            <div class="card-footer">
+                <button class="card-btn btn btn-primary"><i class="fas fa-cart-plus"></i>
+                <span class="md-ht-1">ADD TO CART</span></button>
+                <button class="card-btn btn btn-secondary"><i class="fas fa-heart"></i>
+                    <span class="md-ht-1">SAVE TO WISHLIST</span></button>
+                  
+            </div>
+        </div>
+
+        <div class="card align-items-center">
+            <div class="card-header">
+                <img class="card-img" src="../assets/rackets.jpg" alt="">
+                <span class="card-badge badge">Sale</span>
+            </div>
+            <div class="card-body">
+                <h3>Yonex Feather Shuttle <span class= "btn btn-secondary product-rating text-xs">4 <i class="fas fa-star"> </i></span></h3>
+                <p class="card-description">Lorem ipsum dolor sit amet</p>
+                <p class="md-ht-1 md-btm-1">Rs.490 <span class="card-discount"> 
+                <span class="original-price md-ht-1"> Rs.1299 </span> (62% OFF)</span> </p>
+            </div>
+            <div class="card-footer">
+                <button class="card-btn btn btn-primary"><i class="fas fa-cart-plus"></i>
+                <span class="md-ht-1">ADD TO CART</span></button>
+                <button class="card-btn btn btn-secondary"><i class="fas fa-heart"></i>
+                    <span class="md-ht-1">SAVE TO WISHLIST</span></button>
+                  
+            </div>
+        </div>
+
+        <div class="card align-items-center">
+            <div class="card-header">
+                <img class="card-img" src="../assets/rackets.jpg" alt="">
+                <span class="card-badge badge">Sale</span>
+            </div>
+            <div class="card-body">
+                <h3>Yonex Feather Shuttle <span class= "btn btn-secondary product-rating text-xs">4 <i class="fas fa-star"> </i></span></h3>
+                <p class="card-description">Lorem ipsum dolor sit amet</p>
+                <p class="md-ht-1 md-btm-1">Rs.490 <span class="card-discount"> 
+                <span class="original-price md-ht-1"> Rs.1299 </span> (62% OFF)</span> </p>
+            </div>
+            <div class="card-footer">
+                <button class="card-btn btn btn-primary"><i class="fas fa-cart-plus"></i>
+                <span class="md-ht-1">ADD TO CART</span></button>
+                <button class="card-btn btn btn-secondary"><i class="fas fa-heart"></i>
+                    <span class="md-ht-1">SAVE TO WISHLIST</span></button>
+                  
+            </div>
+        </div>
+
+        <div class="card align-items-center">
+            <div class="card-header">
+                <img class="card-img" src="../assets/rackets.jpg" alt="">
+                <span class="card-badge badge">Sale</span>
+            </div>
+            <div class="card-body">
+                <h3>Yonex Feather Shuttle <span class= "btn btn-secondary product-rating text-xs">4 <i class="fas fa-star"> </i></span></h3>
+                <p class="card-description">Lorem ipsum dolor sit amet</p>
+                <p class="md-ht-1 md-btm-1">Rs.490 <span class="card-discount"> 
+                <span class="original-price md-ht-1"> Rs.1299 </span> (62% OFF)</span> </p>
+            </div>
+            <div class="card-footer">
+                <button class="card-btn btn btn-primary"><i class="fas fa-cart-plus"></i>
+                <span class="md-ht-1">ADD TO CART</span></button>
+                <button class="card-btn btn btn-secondary"><i class="fas fa-heart"></i>
+                    <span class="md-ht-1">SAVE TO WISHLIST</span></button>
+                  
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer flex-column align-items-center">
+        <ul class="list-unstyled">
+            <li class="list-inline">CONTACT US</li>
+            <li class="list-inline">SHIPPING</li>
+            <li class="list-inline">RETURNS</li>
+            <li class="list-inline">CAREERS</li>
+            <li class="list-inline">PRIVACY</li>
+            <li class="list-inline">TERMS</li>
+        </ul>
+
+        <p class="text-xs">&#169; 2021 - 2022 Shuttle Shopy | All rights reserved</p>
+
+    </footer>
+
+    </div>
+</body>
+</html>
