@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shuttle Shopy | Authentication</title>
+    <link rel="stylesheet" href="https://shuttleui.netlify.app/components/components-styles/shuttleUI-main.css">
+    <script src="https://kit.fontawesome.com/2352d5969b.js" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../styles/authentication-page.css">
+</head>
+<body>
+    
+    <div class="container">
+        <nav class="navbar flex-row">
+
+            <a class="navbar-brand" href="../index.html">
+                <img class="responsive-img navbar-logo" 
+                src="../assets/site-logo.png" alt="logo">
+            </a>
+    
+            <form class="navbar-form form-label-inline">
+                <input class="form-search navbar-form" 
+                type="search" placeholder="Search" aria-label="Search">
+            </form>
+    
+            <ul class="navbar-menu list-unstyled flex-row">
+                <li class="list-inline">
+                    <a class="flex-row menu-link btn btn-outline-secondary btn-shop-now" href="product-listing-page.html">
+                        <!-- Shop Now -->
+                        Shop now
+                    </a>
+                </li>   
+                <li class="list-inline">
+                    <a class="flex-column menu-link" href="login.html">
+                        <!-- login-->
+                        <img class="navbar-link" src="../assets/user.png" alt="login icon">
+                    </a>
+                </li>
+    
+                <li class="list-inline">
+                    <a class="flex-column menu-link" href="wishlist.html">
+                        <!-- wishlist  -->
+                    <img class="navbar-link" src="../assets/heart.png" alt="wishlist icon">
+    
+                    </a>
+                </li>
+                    
+                <li class="list-inline">
+                    <a class="flex-column menu-link" href="shopping-cart.html">
+                        <!-- cart -->
+                        <img class="navbar-link" src="../assets/shopping-bag.png" alt="add to cart icon">
+                    </a>
+                </li>    
+            </ul>
+    
+        </nav>
+
+        <main class="main flex-column">
+
+            <div class="form-container card">
+                <h2 class="form-heading">Sign Up</h2>
+                <form>
+                    <div class="form-set">
+                        <label class="form-label" for="fname">First Name:</label>
+                        <input class="form-input form-input-lg pd-1" type="text" id="fname" name="fname" placeholder="test" required>
+                    </div>
+                    
+                    <div class="form-set">
+                        <label class="form-label" for="lname">Last Name:</label>
+                        <input class="form-input form-input-lg pd-1" type="text" id="lname" name="lname" placeholder="singh" required>
+                    </div>
+                    
+                    <div class="form-set">
+                        <label class="form-label" for="email">Email:</label>
+                        <input class="form-input form-input-lg pd-1" type="email" id="email" name="email" placeholder="test@gmail.com" required>
+                    </div>
+    
+                    <div class="form-set">
+                        <label class="form-label" for="password">Password:</label>
+                        <input class="form-input form-input-lg pd-1" type="password" id="password" name="password" placeholder="*********" required> <span class="toggle-password"><i class="fas fa-eye-slash"></i></span> 
+                    </div>
+
+                    <div class="form-set">
+                        <label class="form-label" for="password">Confirm Password:</label>
+                        <input class="form-input form-input-lg pd-1" type="password" id="password" name="password" placeholder="Enter password again" required> <span class="toggle-password"> <i class="fas fa-eye"></i></span>   
+                    </div>
+                    
+                    <div class="form-check md-vt-1 flex-row">
+                        <input type="checkbox" value="demo" id="terms-and-conditions">
+                        <label class="form-label-inline text-sm text-primary" for="terms-and-conditions">I accept all terms and conditions.</label>   
+                    </div>
+                    
+                    <div class="flex-column">
+                        <button type="submit" class="btn btn-primary form-btn">Sign up</button>
+                        <p class="text-sm text-center text-bold-500 text-primary form-link-text">Existing user ? <a class="text-primary" href="./login.html" >Login Here</a></p>
+                    </div>
+                </form>
+            </div>
+           
+        </main>
+    
+        <footer class="footer flex-column align-items-center">
+            <ul class="list-unstyled">
+                <li class="list-inline">CONTACT US</li>
+                <li class="list-inline">SHIPPING</li>
+                <li class="list-inline">RETURNS</li>
+                <li class="list-inline">CAREERS</li>
+                <li class="list-inline">PRIVACY</li>
+                <li class="list-inline">TERMS</li>
+            </ul>
+    
+            <p class="text-xs">&#169; 2021 - 2022 Shuttle Shopy | All rights reserved</p>
+    
+        </footer>
+    </div>
+   
+</body>
+</html>
