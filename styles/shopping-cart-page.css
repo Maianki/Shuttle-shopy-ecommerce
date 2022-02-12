@@ -1,0 +1,81 @@
+/*CSS for page layout*/
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+.main{
+    margin: 5rem;
+}
+
+/*Cart product styling*/
+.mycart-heading{
+    color: var(--PRIMARY-COLOR);
+}
+
+.card-body{
+    min-width: 22rem;
+}
+
+.card-horizontal-footer {
+    margin-top: 6px;
+}
+
+.card-btn{
+    margin-top: 1rem;
+}
+
+/*Styling for product quantity block*/
+.btn-quantity{
+    justify-content: center;
+}
+
+.btn-quantity-input{
+    display: inline-block;
+    margin: 8px 0;
+    padding: 0 1.2rem;
+    max-width: 8rem;
+    background-color: var(--GRAY-COLOR);
+    border: 1px solid var(--GRAY-COLOR);
+}
+
+.btn-quantity-plus,
+.btn-quantity-minus{
+    margin: 1rem 1.2rem;
+    font-size: 2.2rem;
+    background-color: var(--WHITE-COLOR);
+}
+
+/*Order Details*/
+
+/* .card-order-summary{
+    width: 50rem;
+} */
+
+.card-order-heading{
+    border-bottom:1px solid var(--GRAY-COLOR);
+    padding-bottom: 1.2rem;
+    color: var(--PRIMARY-COLOR);
+}
+
+.order-item{
+    justify-content: space-between;
+    padding: 1rem;
+    font-size: 1.4rem;
+}
+
+.order-delivery-charge{
+    padding-bottom: 2rem;
+    border-bottom:1px solid var(--GRAY-COLOR);
+}
+
+.order-item-text{
+    font-size: 1.4rem;
+}
+
+.total-price{
+    border-bottom: 1px solid var(--GRAY-COLOR);
+    margin-bottom: 1rem;
+    color: var(--PRIMARY-COLOR);
+}

@@ -15,6 +15,10 @@
     justify-content: center;
 }
 
+.text-primary{
+    color:var(--PRIMARY-COLOR);
+}
+
 
 /*Navabar section*/
 .form-search{
