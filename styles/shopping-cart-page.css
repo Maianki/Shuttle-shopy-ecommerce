@@ -1,4 +1,5 @@
 /*CSS for page layout*/
+
 .container{
     display: grid;
     height: 100vh;
@@ -9,10 +10,15 @@
     margin: 5rem;
 }
 
-/*Cart product styling*/
-.mycart-heading{
-    color: var(--PRIMARY-COLOR);
+.cart-product-details{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(45rem,1fr));
+    justify-items: center;
+    align-items: center;
+    padding-top: 3rem;
 }
+
+/*Cart product styling*/
 
 .card-body{
     min-width: 22rem;
@@ -27,6 +33,7 @@
 }
 
 /*Styling for product quantity block*/
+
 .btn-quantity{
     justify-content: center;
 }
@@ -48,10 +55,6 @@
 }
 
 /*Order Details*/
-
-/* .card-order-summary{
-    width: 50rem;
-} */
 
 .card-order-heading{
     border-bottom:1px solid var(--GRAY-COLOR);
