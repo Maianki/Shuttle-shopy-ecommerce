@@ -107,3 +107,24 @@
       justify-content: space-between;
   }
 
+
+/*Media Query*/
+@media screen and (max-width: 45rem) {
+
+    .products-filter{
+        display: none;
+    }
+
+    .container{
+        grid-template-areas: 
+                "navbar navbar navbar navbar"
+                "main main main main"
+                "footer footer footer footer";
+    }
+    
+    .main{
+        justify-content: center;
+    }
+
+}
+
