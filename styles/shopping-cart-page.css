@@ -20,6 +20,10 @@
 
 /*Cart product styling*/
 
+.card{
+    max-width:45rem;
+}
+
 .card-body{
     min-width: 22rem;
 }

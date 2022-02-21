@@ -1,5 +1,4 @@
 /*CSS Variables*/
-
 :root{
     --PRIMARY-COLOR:#4B4453;
     --GRAY-COLOR: #ece6e6;
@@ -13,6 +12,7 @@
 .flex-row-center{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .text-primary{
@@ -27,6 +27,10 @@
     padding-left: 2rem; 
     border: 1px var(--PRIMARY-COLOR);
     background-color: var(--SECONDARY-COLOR);
+}
+
+.navbar-img{
+    min-width: 20rem;
 }
 
 .form-search:focus{
@@ -67,10 +71,10 @@
 
 .hero-img-overlay{
     position:absolute;
-    align-items: flex-end;
+    align-items: flex-start;
     right: 0;
-    top:20%;
-    padding: 4rem;
+    top:22%;
+    padding: 3rem;
 }
 
 .hero-heading{
@@ -117,6 +121,8 @@
 
 .trending-container{
     margin-bottom: 7rem;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /*footer*/

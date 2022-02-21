@@ -1,0 +1,22 @@
+
+@media screen and (max-width: 60rem) {
+     html{
+        font-size: 60%;
+    } 
+
+    .navbar-form{
+        display: none;
+    }
+
+    .navbar-menu{
+        width: 75%;
+    }
+
+ }
+
+@media screen and (max-width: 45rem) {
+    html{
+       font-size: 55%;
+   } 
+
+}
